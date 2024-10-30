@@ -9,6 +9,7 @@ import {
   pantheonOfTheArtist,
 } from "../utils/pantheonInfo";
 import { Pantheon } from "../types/pantheon";
+import '../css/pantheonCards.css'
 
 const AttemptForm = () => {
   const [pantheon, setPantheon] = useState<string | null>(null);
@@ -47,7 +48,7 @@ const AttemptForm = () => {
         <div className="grid grid-cols-5 gap-4 border-b-2 border-yellow-500">
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+              className="w-full h-full hover:scale-105 transition duration-200 ease-in-out p-master"
               onClick={() => setPantheon("Pantheon of the Master")}
             />
             <p
@@ -62,7 +63,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out p-artist"
               onClick={() => setPantheon("Pantheon of the Artist")}
             />
             <p
@@ -77,7 +78,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out p-sage"
               onClick={() => setPantheon("Pantheon of the Sage")}
             />
             <p
@@ -92,7 +93,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+              className="w-full h-full hover:scale-105 transition duration-200 ease-in-out p-knight"
               onClick={() => setPantheon("Pantheon of the Knight")}
             />
             <p
@@ -107,7 +108,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out p-hallownest"
               onClick={() => setPantheon("Pantheon of Hallownest")}
             />
             <p

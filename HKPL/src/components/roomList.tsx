@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Pantheon } from "../types/pantheon";
 import { Room } from "../types/room";
 import { Boss } from "../types/boss";
@@ -25,6 +24,7 @@ const RoomList = ({ pantheon, onRoomSelect }: IProps) => {
             max={pantheon.roomsInPantheon.length}
             id="roomReached"
             className="w-full"
+            onChange={(e) => handleMaxRoomReached(e.target.valueAsNumber)}
           />
         </div>
         {pantheon.roomsInPantheon.map((room: Room) => {

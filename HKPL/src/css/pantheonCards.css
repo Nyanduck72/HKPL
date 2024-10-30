@@ -1,0 +1,34 @@
+.p-master {
+  background-image: url("../../public/pantheonThumbnails/p-master.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-artist {
+  background-image: url("../../public/pantheonThumbnails/p-artist.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-sage {
+  background-image: url("../../public/pantheonThumbnails/p-sage.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-knight {
+  background-image: url("../../public/pantheonThumbnails/p-knight.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-hallownest {
+  background-image: url("../../public/pantheonThumbnails/p-hallownest.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
