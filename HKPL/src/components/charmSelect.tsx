@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Charm } from "../types/charm";
 import { CharmList } from "../utils/charmInfo";
+import { BsX } from "react-icons/bs";
 
 const CharmSelect = () => {
   const [usedCharmNotchCount, setUsedCharmNotchCount] = useState<number>(0);
@@ -32,15 +33,29 @@ const CharmSelect = () => {
     }
   };
 
+  const clearCharms = () => {
+    setSelectedCharms([]);
+    setUsedCharmNotchCount(0);
+  };
+
   return (
     <>
       <div className="w-full">
-        <h1 className="text-3xl text-white font-bold">Charms</h1>
+        <div className="flex flex-row items-end">
+          <h1 className="text-3xl text-white font-bold">Charms</h1>
+          <button
+            onClick={() => clearCharms()}
+            className="flex gap-x-2 items-center py-1 px-4 ml-4 bg-yellow-500 hover:bg-yellow-400 rounded-full"
+          >
+            <BsX size={28} />
+            <p>Clear Charms</p>
+          </button>
+        </div>
         <div className="mt-6 mb-3 w-full grid grid-cols-13 gap-2 equipped">
           <h1 className="text-xl font-bold text-white">Equipped</h1>
           <div className="grid grid-cols-11 h-16">
             {selectedCharms.map((charm: Charm) => (
-              <div key={charm.name} className="w-20 h-20 bg-white rounded-full">
+              <div key={charm.name} className="w-20 h-20 rounded-full">
                 <img src={charm.img} alt="" className="w-full" />
               </div>
             ))}
@@ -86,7 +101,7 @@ const CharmSelect = () => {
           </div>
         </div>
 
-        <div className="mt-2 w-full grid grid-cols-11 gap-y-4">
+        <div className="mt-2 w-full grid grid-cols-11 gap-y-4 pb-4 border-b-2 border-b-yellow-500">
           {CharmList().map((charm: Charm, index: number) => (
             <div
               key={charm.name}

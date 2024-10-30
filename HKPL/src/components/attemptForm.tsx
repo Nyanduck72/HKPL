@@ -1,15 +1,42 @@
 import { useState } from "react";
 import CharmSelect from "./charmSelect";
+import RoomList from "./roomList";
+import {
+  pantheonOfHallownest,
+  pantheonOfTheMaster,
+  pantheonOfTheSage,
+  pantheonOfTheKnight,
+  pantheonOfTheArtist,
+} from "../utils/pantheonInfo";
+import { Pantheon } from "../types/pantheon";
 
 const AttemptForm = () => {
-  const [pantheon, setPantheon] = useState<string>("");
+  const [pantheon, setPantheon] = useState<string | null>(null);
   const [bindings, setBindings] = useState<string[]>([]);
+  const [roomReached, setRoomReached] = useState<number>(1);
 
   const handleBindingSelection = (binding: string) => {
     if (bindings.includes(binding)) {
       setBindings(bindings.filter((b) => b !== binding));
     } else {
       setBindings([...bindings, binding]);
+    }
+  };
+
+  const handlePantheonSelection = (pantheon: string) => {
+    switch (pantheon) {
+      case "Pantheon of the Master":
+        return pantheonOfTheMaster;
+      case "Pantheon of the Artist":
+        return pantheonOfTheArtist;
+      case "Pantheon of the Sage":
+        return pantheonOfTheSage;
+      case "Pantheon of the Knight":
+        return pantheonOfTheKnight;
+      case "Pantheon of Hallownest":
+        return pantheonOfHallownest;
+      default:
+        return {} as Pantheon;
     }
   };
 
@@ -153,6 +180,18 @@ const AttemptForm = () => {
         </div>
         <div className="mt-6 w-full">
           <CharmSelect />
+        </div>
+        <div className="mt-6 w-full">
+          {pantheon ? (
+            <RoomList
+              pantheon={handlePantheonSelection(pantheon)}
+              onRoomSelect={setRoomReached}
+            />
+          ) : (
+            <h1 className="text-3xl text-white font-bold">
+              You need to set a pantheon first!
+            </h1>
+          )}
         </div>
       </div>
     </>
