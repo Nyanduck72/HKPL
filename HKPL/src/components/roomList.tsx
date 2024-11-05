@@ -75,7 +75,7 @@ const RoomList = ({ pantheon, onRoomSelect }: IProps) => {
                 </h1>
               </div>
               <div className="col-span-2">
-                <img src={room.imgSrc} alt={room.roomType.toString()} />
+                <img src={room.imgSrc} alt={room.roomType === "Lore" || room.roomType === "Rest" ? room.roomType : (room.roomType as Boss).name + " " } />
               </div>
             </>
           );
