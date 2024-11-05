@@ -7,6 +7,7 @@ export const pantheonOfTheMaster: Pantheon = {
     roomsInPantheon: [
         {
             roomNumber: 1,
+            imgSrc: "/bossThumbnails/B_Vengefly_King.webp",
             roomType: {
                 name: "Vengefly King",
                 timesDefeated: 0,

@@ -2,33 +2,61 @@
   background-image: url("../../public/pantheonThumbnails/p-master.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75%;
 }
 
 .p-artist {
   background-image: url("../../public/pantheonThumbnails/p-artist.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75%;
 }
 
 .p-sage {
   background-image: url("../../public/pantheonThumbnails/p-sage.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75%;
 }
 
 .p-knight {
   background-image: url("../../public/pantheonThumbnails/p-knight.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75%;
 }
 
 .p-hallownest {
   background-image: url("../../public/pantheonThumbnails/p-hallownest.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 75%;
+}
+
+.b-shell {
+  background-image: url("../../public/bindings/Shell_Binding.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+.b-nail {
+  background-image: url("../../public/bindings/Nail_Binding.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+.b-charms {
+  background-image: url("../../public/bindings/CHarms_Binding.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+.b-soul {
+  background-image: url("../../public/bindings/Soul_Binding.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
 }

@@ -9,7 +9,7 @@ import {
   pantheonOfTheArtist,
 } from "../utils/pantheonInfo";
 import { Pantheon } from "../types/pantheon";
-import '../css/pantheonCards.css'
+import "../css/pantheonCards.css";
 
 const AttemptForm = () => {
   const [pantheon, setPantheon] = useState<string | null>(null);
@@ -63,7 +63,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out p-artist"
+              className="w-full h-full hover:scale-105 transition duration-200 ease-in-out p-artist"
               onClick={() => setPantheon("Pantheon of the Artist")}
             />
             <p
@@ -78,7 +78,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out p-sage"
+              className="w-full h-full hover:scale-105 transition duration-200 ease-in-out p-sage"
               onClick={() => setPantheon("Pantheon of the Sage")}
             />
             <p
@@ -108,7 +108,7 @@ const AttemptForm = () => {
           </div>
           <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
             <button
-              className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out p-hallownest"
+              className="w-full h-full hover:scale-105 transition duration-200 ease-in-out p-hallownest"
               onClick={() => setPantheon("Pantheon of Hallownest")}
             />
             <p
@@ -127,7 +127,7 @@ const AttemptForm = () => {
           <div className="grid grid-cols-4 gap-4 border-b-2 border-yellow-500">
             <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
               <button
-                className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+                className="w-full h-full hover:scale-105 transition duration-200 ease-in-out b-shell"
                 onClick={() => handleBindingSelection("Shell")}
               />
               <p
@@ -140,7 +140,7 @@ const AttemptForm = () => {
             </div>
             <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
               <button
-                className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+                className="w-full h-full hover:scale-105 transition duration-200 ease-in-out b-soul"
                 onClick={() => handleBindingSelection("Soul")}
               />
               <p
@@ -153,7 +153,7 @@ const AttemptForm = () => {
             </div>
             <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
               <button
-                className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+                className="w-full h-full hover:scale-105 transition duration-200 ease-in-out b-nail"
                 onClick={() => handleBindingSelection("Nail")}
               />
               <p
@@ -166,7 +166,7 @@ const AttemptForm = () => {
             </div>
             <div className="w-full h-60 mb-2 flex flex-col items-center justify-center">
               <button
-                className="w-full h-full bg-white hover:scale-105 transition duration-200 ease-in-out"
+                className="w-full h-full hover:scale-105 transition duration-200 ease-in-out b-charms"
                 onClick={() => handleBindingSelection("Charms")}
               />
               <p
