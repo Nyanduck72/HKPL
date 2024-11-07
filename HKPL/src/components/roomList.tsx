@@ -51,7 +51,7 @@ const RoomList = ({ pantheon, onRoomSelect }: IProps) => {
               <img
                 src={`${pantheon.roomsInPantheon[value - 1].imgSrc ? pantheon.roomsInPantheon[value - 1].imgSrc : ""}`}
                 alt=""
-                className="select-none"
+                className="select-none rounded-full"
               />
             </div>
             <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 translate-y-full w-4 h-4 -rotate-45  border-l-4 border-l-yellow-600 border-r-4 border-r-transparent border-t-4 border-b-4 border-b-yellow-600 border-t-transparent"></div>

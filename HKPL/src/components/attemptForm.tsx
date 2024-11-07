@@ -9,7 +9,7 @@ import {
   pantheonOfTheArtist,
 } from "../utils/pantheonInfo";
 import { Pantheon } from "../types/pantheon";
-import "../css/pantheonCards.css";
+import "../css/cards.css";
 
 const AttemptForm = () => {
   const [pantheon, setPantheon] = useState<string | null>(null);
